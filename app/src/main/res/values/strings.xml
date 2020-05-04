@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Fix</string>
+    <string name="hello_android">Hello Android</string>
+    <string name="e_mail">E-mail</string>
+    <string name="todo">TODOuno</string>
+    <string name="register">register</string>
+    <string name="login">logIn</string>
+    <string name="password">Password</string>
+    <string name="registre_b">registre</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="todo_uno">TODOdos</string>
+    <string name="todo_dos">otres</string>
+    <string name="todo_google">ocuatro</string>
+    <string name="emailtextview">EmailTextView</string>
+    <string name="provider">provider</string>
+    <string name="logout_butt">logout_butt</string>
+    <string name="email">Email</string>
+    <string name="plumbingText">Plumbing</string>
+    <string name="mechanicText">Mechanic</string>
+    <string name="careText">Care</string>
+    <string name="cleaningText">Cleaning</string>
+    <string name="locksmithText">Locksmith</string>
+    <string name="paintingText">Painting</string>
+    <string name="servicesText">Services</string>
+    <string name="buildingText">Building</string>
+    <string name="contract_serviceText">Contract Service</string>
+    <string name="publish_serviceText">Publish Service</string>
+    <string name="carpentryText">Carpentry</string>
+    <string name="title_activity_paintscreem">Paintscreem</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+
+</resources>

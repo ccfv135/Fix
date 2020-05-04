@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fix</string>
+    <string name="e_mail">электронная почта</string>
+    <string name="emailtextview">электронная почта</string>
+    <string name="email">электронная почта</string>
+    <string name="register">"Регистрация "</string>
+    <string name="registre_b">"Регистрация "</string>
+    <string name="login">войти</string>
+    <string name="password">пароль</string>
+    <string name="forgot_password">"Забыли пароль? "</string>
+    <string name="provider">поставщик</string>
+    <string name="logout_butt">выйти</string>
+    <string name="mechanicText">механика</string>
+    <string name="plumbingText">водопровод</string>
+    <string name="careText">"люди заботятся "</string>
+    <string name="cleaningText">уборка</string>
+    <string name="locksmithText">"слесарные "</string>
+    <string name="paintingText">"картина "</string>
+    <string name="servicesText">услуги</string>
+    <string name="buildingText">строительство</string>
+    <string name="contract_serviceText">услуги</string>
+    <string name="publish_serviceText">"опубликованный "</string>
+    <string name="carpentryText">"плотничные работы "</string>
+    <string name="hello_android">Привет добро пожаловать</string>
+    <string name="todo">Привет добро пожаловать</string>
+    <string name="todo_uno">Привет добро пожаловать</string>
+    <string name="todo_dos">Привет добро пожаловать</string>
+    <string name="todo_google">Привет добро пожаловать</string>
+</resources>

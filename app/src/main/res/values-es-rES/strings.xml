@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fix</string>
+    <string name="e_mail">E-mail</string>
+    <string name="hello_android">Hola Android</string>
+    <string name="todo">todo</string>
+    <string name="register">registrarse</string>
+    <string name="login">acceder</string>
+    <string name="password">Contraseña</string>
+    <string name="registre_b">registrarse</string>
+    <string name="forgot_password">Olvido su contraseña?</string>
+    <string name="todo_uno">todosdos</string>
+    <string name="todo_dos">otres</string>
+    <string name="todo_google">ocuatro</string>
+    <string name="emailtextview">Correo Electronico</string>
+    <string name="provider">proveedor</string>
+    <string name="logout_butt">cerrar sesion</string>
+    <string name="email">Correo electrónico</string>
+    <string name="plumbingText">Fontanería</string>
+    <string name="mechanicText">Mecánica</string>
+    <string name="careText">Cuidados</string>
+    <string name="cleaningText">Limpieza</string>
+    <string name="locksmithText">Cerrajería</string>
+    <string name="paintingText">Pintura</string>
+    <string name="servicesText">Servicios</string>
+    <string name="buildingText">Construcción</string>
+    <string name="contract_serviceText">Contrata un Servicio</string>
+    <string name="publish_serviceText">Publica un Sevicio</string>
+    <string name="carpentryText">Carpintería</string>
+</resources>

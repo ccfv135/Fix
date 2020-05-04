@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1026229393735",
+    "firebase_url": "https://fix-85b75.firebaseio.com",
+    "project_id": "fix-85b75",
+    "storage_bucket": "fix-85b75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026229393735:android:b0ffa366ff8a36cfee9462",
+        "android_client_info": {
+          "package_name": "com.chrisfajardo.fix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026229393735-d1vrjgth4inp3lov4hgc35fpjb1qvppk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqK0XuU5grqPQ5iewbcJcb7wcTJEdmnOA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026229393735-d1vrjgth4inp3lov4hgc35fpjb1qvppk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
