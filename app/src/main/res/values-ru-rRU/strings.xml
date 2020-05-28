@@ -27,4 +27,13 @@
     <string name="todo_uno">Привет добро пожаловать</string>
     <string name="todo_dos">Привет добро пожаловать</string>
     <string name="todo_google">Привет добро пожаловать</string>
+    <string name="upload_profile_picture">аватарка</string>
+    <string name="especialista">специалист</string>
+    <string name="nameRegistre">имя</string>
+    <string name="phoneRegistre">Телефон</string>
+    <string name="descriptionRegistre">описание</string>
+    <string name="publishRegistre">опубликовать</string>
+    <string name="result">Resultado</string>
+    <string name="profilepic">profilePic</string>
+    <string name="llamar">вызов</string>
 </resources>

@@ -6,4 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".PostActivity">
 
+    <Button
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/upload_profile_picture"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:layout_width="126dp"
+        android:layout_height="144dp"
+        android:contentDescription="@string/profilepic"
+        app:layout_constraintBottom_toTopOf="@+id/buttonUploadImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+    <EditText
+        android:id="@+id/phonRegistre"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="@string/phoneRegistre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadImage"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nameRegistre"
+        android:layout_width="285dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/nameRegistre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadImage"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/spinnerServices"
+        android:layout_width="276dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonRegistre" />
+
+    <EditText
+        android:id="@+id/descRegistre"
+        android:layout_width="285dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/descriptionRegistre"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerServices" />
+
+    <Button
+        android:id="@+id/publishButton"
+        android:layout_width="150dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="#00BCD4"
+        android:text="@string/publishRegistre"
+        android:textColor="#EDE7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,18 +26,24 @@
     <string name="contract_serviceText">Contract Service</string>
     <string name="publish_serviceText">Publish Service</string>
     <string name="carpentryText">Carpentry</string>
-    <string name="title_activity_paintscreem">Paintscreem</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
 
-    <string name="home_second">Home Second</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_gallery" translatable="false">Gallery</string>
+    <string name="menu_slideshow" translatable="false">Slideshow</string>
+
+    <string name="home_second" translatable="false">Home Second</string>
+    <string name="upload_profile_picture">Upload Profile Picture</string>
+    <string name="title_activity_paintscreem">activityPaintscreem</string>
+    <string name="especialista">Epecialist</string>
+    <string name="descripci_n">description</string>
+    <string name="llamar">CALL</string>
+    <string name="profilepic">profilePic</string>
+    <string name="nameRegistre">Name</string>
+    <string name="phoneRegistre">Phone</string>
+    <string name="descriptionRegistre">Description</string>
+    <string name="publishRegistre">PUBLISH</string>
+    <string name="result">Result</string>
+    <string name="painting">Painting</string>
 
 </resources>

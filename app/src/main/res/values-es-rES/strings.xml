@@ -27,4 +27,13 @@
     <string name="contract_serviceText">Contrata un Servicio</string>
     <string name="publish_serviceText">Publica un Sevicio</string>
     <string name="carpentryText">Carpintería</string>
+    <string name="upload_profile_picture">Sube Foto de Perfil</string>
+    <string name="nameRegistre">Nombre</string>
+    <string name="phoneRegistre">Teléfono</string>
+    <string name="descriptionRegistre">Descripción</string>
+    <string name="publishRegistre">PUBLICAR</string>
+    <string name="result">Resultado</string>
+    <string name="llamar">LLAMAR</string>
+    <string name="profilepic">fotodeperfil</string>
+    <string name="especialista">Especialista</string>
 </resources>

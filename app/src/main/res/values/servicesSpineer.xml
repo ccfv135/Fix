@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="combo_servicios">
+
+        <item>Painting</item>
+        <item>Building</item>
+        <item>LockSmith</item>
+        <item>Cleaning</item>
+        <item>Care</item>
+        <item>Carpentry</item>
+        <item>Mechanic</item>
+        <item>Plumbing</item>
+    </string-array>
+</resources>
