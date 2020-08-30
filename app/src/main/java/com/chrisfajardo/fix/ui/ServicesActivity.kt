@@ -1,12 +1,12 @@
-package com.chrisfajardo.fix
+package com.chrisfajardo.fix.ui
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.chrisfajardo.fix.paintscreen.PaintScreenActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.chrisfajardo.fix.R
 import kotlinx.android.synthetic.main.activity_services.*
 
-class Services : AppCompatActivity() {
+class ServicesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,5 +17,7 @@ class Services : AppCompatActivity() {
                 PaintScreenActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }

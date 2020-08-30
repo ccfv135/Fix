@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix.paintscreen
+package com.chrisfajardo.fix.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -11,9 +11,9 @@ import kotlinx.android.synthetic.main.item_row.view.*
 
 class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {
 
-    private var dataList = mutableListOf<UserPaintScreen>()
+    private var dataList = mutableListOf<UserPaintScreenActivity>()
 
-    fun setListData(data:MutableList<UserPaintScreen>){
+    fun setListData(data:MutableList<UserPaintScreenActivity>){
         dataList =data
     }
 
@@ -37,10 +37,11 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
 
     inner class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
-        fun bindView(user: UserPaintScreen){
-            Glide.with(context).load(user.imageUrl).into(itemView.circleImageView)
-            itemView.txt_tittle.text = user.nombre
-            itemView.descripccion.text = user.descripcion
+        fun bindView(userActivity: UserPaintScreenActivity){
+            Glide.with(context).load(userActivity.name).into(itemView.circleImageView)
+            itemView.name.text=userActivity.name
+            itemView.txt_tittle.text = userActivity.phone
+            itemView.descripccion.text = userActivity.description
 
         }
     }

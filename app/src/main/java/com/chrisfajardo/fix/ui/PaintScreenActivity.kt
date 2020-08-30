@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix.paintscreen
+package com.chrisfajardo.fix.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chrisfajardo.fix.R
+import com.chrisfajardo.fix.viewModel.PaintScreenViewModel
 import kotlinx.android.synthetic.main.activity_paintscreem.*
 
 class PaintScreenActivity : AppCompatActivity() {

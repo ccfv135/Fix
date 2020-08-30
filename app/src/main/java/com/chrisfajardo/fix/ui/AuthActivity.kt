@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix
+package com.chrisfajardo.fix.ui
 
 import android.app.Activity
 import android.content.Intent
@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.chrisfajardo.fix.R
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
@@ -32,10 +33,10 @@ class AuthActivity : AppCompatActivity() {
     }
     private fun goto(){
         if (authUser.currentUser!=null){
-            startActivity(Intent(this,HomeActivity::class.java ))
+            startActivity(Intent(this, HomeActivity::class.java ))
             finish()
         }else{
-            startActivity(Intent(this,AuthActivity::class.java ))
+            startActivity(Intent(this, AuthActivity::class.java ))
             finish()
         }
     }
@@ -48,7 +49,9 @@ class AuthActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(emailBarra.text.toString(),
                     passwordBarra.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful){
-                        showHome(it.result?.user?.email?:"", ProviderTipe.BASIC)
+                        showHome(it.result?.user?.email?:"",
+                            ProviderTipe.BASIC
+                        )
 
                     }else{
                         showAlert("Error", "Error al autenticar el usuario")
@@ -65,7 +68,9 @@ class AuthActivity : AppCompatActivity() {
                 FirebaseAuth.getInstance().signInWithEmailAndPassword(emailBarra.text.toString(),
                     passwordBarra.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful){
-                        showHome(it.result?.user?.email?:"", ProviderTipe.BASIC)
+                        showHome(it.result?.user?.email?:"",
+                            ProviderTipe.BASIC
+                        )
 
                     }else{
                         showAlert("Error", "Error al autenticar el usuario")
@@ -110,7 +115,8 @@ class AuthActivity : AppCompatActivity() {
                     .setAvailableProviders(providers)
                     .setIsSmartLockEnabled(false)
                     .build(),
-                RC_SIGN_IN)
+                RC_SIGN_IN
+            )
 
         }
     }
@@ -124,7 +130,7 @@ class AuthActivity : AppCompatActivity() {
                 // Successfully signed in
                 val user = FirebaseAuth.getInstance().currentUser
                 Toast.makeText(this,"Bienvenid@ ${user!!.displayName}" ,Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,HomeActivity::class.java ))
+                startActivity(Intent(this, HomeActivity::class.java ))
                 finish()
             } else {
                 // Sign in failed. If response is null the user canceled the

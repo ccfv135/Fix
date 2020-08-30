@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix
+package com.chrisfajardo.fix.ui
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.chrisfajardo.fix.R
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_post.*
@@ -72,7 +73,7 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         items.put("description",description)
         items.put("service",spinner)
         try {
-            db.collection("Painting").document("Painters").set(items)
+            db.collection(spinner).document(spinner).set(items)
                 .addOnSuccessListener { void: Void? ->
                     Toast.makeText(
                         this,

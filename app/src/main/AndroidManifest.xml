@@ -13,16 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".paintscreen.PaintScreenActivity"
+            android:name=".ui.PaintScreenActivity"
             android:label="@string/title_activity_paintscreem"
             android:theme="@style/NoActionBar"></activity>
-        <activity android:name=".PostActivity" />
-        <activity android:name=".Services" />
+        <activity android:name=".ui.PostActivity" />
+        <activity android:name=".ui.ServicesActivity" />
         <activity
-            android:name=".Splashscreem"
+            android:name=".ui.SplashscreemActivity"
             android:theme="@style/splashThemme" />
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".AuthActivity">
+        <activity android:name=".ui.HomeActivity" />
+        <activity android:name=".ui.AuthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
