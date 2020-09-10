@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix.domain
+package com.chrisfajardo.fix.data.repo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

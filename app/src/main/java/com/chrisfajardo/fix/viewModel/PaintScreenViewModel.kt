@@ -3,7 +3,7 @@ package com.chrisfajardo.fix.viewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.chrisfajardo.fix.domain.PaintRepo
+import com.chrisfajardo.fix.data.repo.PaintRepo
 import com.chrisfajardo.fix.ui.UserPaintScreenActivity
 
 class PaintScreenViewModel:ViewModel() {

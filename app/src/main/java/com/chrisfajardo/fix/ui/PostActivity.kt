@@ -7,7 +7,9 @@ import android.widget.ArrayAdapter
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProviders
 import com.chrisfajardo.fix.R
+import com.chrisfajardo.fix.viewModel.FirestoreViewModel
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_post.*
@@ -15,7 +17,7 @@ import kotlinx.android.synthetic.main.activity_post.*
 
 class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-
+    private lateinit var viewModel: FirestoreViewModel
 
 
     lateinit var spinner: String
@@ -36,12 +38,22 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_post)
 
+        viewModel = ViewModelProviders.of(this).get(FirestoreViewModel::class.java)
+
+
+
         db = FirebaseFirestore.getInstance().document("Painting/Painters")
 
 
 
         publishButton.setOnClickListener {
-            saveHero()
+            viewModel.createUser(
+                nameRegistre.text.toString(),
+                phonRegistre.text.toString(),
+                descRegistre.text.toString(),
+                spinner
+            )
+
         }
 
 
@@ -51,45 +63,6 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             ArrayAdapter(applicationContext, android.R.layout.simple_spinner_item, itemList)
         spineerServices?.adapter = arrayAdapter
         spineerServices?.onItemSelectedListener = this
-
-
-    }
-
-    private fun saveHero() {
-        val name = nameRegistre.text.toString().trim()
-        val phone = phonRegistre.text.toString().trim()
-        val description = descRegistre.text.toString().trim()
-
-
-        if (name.isEmpty()) {
-            nameRegistre.error = "Please enter a name"
-            return
-        }
-
-
-        val items = HashMap<String, Any>()
-        items.put("name",name)
-        items.put("phone",phone)
-        items.put("description",description)
-        items.put("service",spinner)
-        try {
-            db.collection(spinner).document(spinner).set(items)
-                .addOnSuccessListener { void: Void? ->
-                    Toast.makeText(
-                        this,
-                        "Successfully uploaded to the database :)",
-                        Toast.LENGTH_LONG
-                    ).show()
-                }.addOnFailureListener { exception: java.lang.Exception ->
-                Toast.makeText(
-                    this,
-                    exception.toString(),
-                    Toast.LENGTH_LONG
-                ).show()
-            }
-        }catch (e:Exception) {
-            Toast.makeText(this, e.toString(), Toast.LENGTH_LONG).show()
-        }
 
 
     }
