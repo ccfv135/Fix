@@ -17,7 +17,8 @@ import kotlinx.android.synthetic.main.activity_post.*
 
 class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
-    private lateinit var viewModel: FirestoreViewModel
+
+    private val viewModel by lazy { ViewModelProviders.of(this).get(FirestoreViewModel::class.java)}
 
 
     lateinit var spinner: String
@@ -38,7 +39,7 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_post)
 
-        viewModel = ViewModelProviders.of(this).get(FirestoreViewModel::class.java)
+
 
 
 

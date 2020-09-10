@@ -16,7 +16,7 @@ class FirebaseRepo {
         )
 
 
-        db.collection("users")
+        db.collection(spinner)
             .add(userHashMap).addOnCompleteListener {
                 if (it.isSuccessful) {
                     print("Successful")
