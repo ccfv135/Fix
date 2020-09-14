@@ -6,13 +6,15 @@ class FirebaseRepo {
 
     val db = FirebaseFirestore.getInstance()
 
-    fun setUserData(name: String, phone: String, description: String, spinner: String) {
+    fun setUserData(name: String, phone: String, description: String, spinner: String,url:String) {
 
         val userHashMap = hashMapOf(
             "name" to name,
             "phone" to phone,
             "description" to description,
-            "spinner" to spinner
+            "spinner" to spinner,
+            "url" to url
+
         )
 
 

@@ -7,8 +7,8 @@ class FirestoreViewModel:ViewModel() {
 
     val firestoreUserCase= FirestoreUserCase()
 
-    fun createUser(name:String,phone:String,description:String,spinner:String){
-        firestoreUserCase.setUserFirestore(name,phone,description,spinner)
+    fun createUser(name:String,phone:String,description:String,spinner:String,url:String){
+        firestoreUserCase.setUserFirestore(name,phone,description,spinner,url)
 
     }
 

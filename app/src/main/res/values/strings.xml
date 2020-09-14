@@ -45,5 +45,6 @@
     <string name="publishRegistre">PUBLISH</string>
     <string name="result">Result</string>
     <string name="painting">Painting</string>
+    <string name="open_camera">open camera</string>
 
 </resources>

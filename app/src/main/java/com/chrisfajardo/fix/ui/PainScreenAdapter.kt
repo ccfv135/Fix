@@ -38,10 +38,11 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
     inner class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
         fun bindView(userActivity: UserPaintScreenActivity){
-            Glide.with(context).load(userActivity.name).into(itemView.circleImageView)
+            Glide.with(context).load(userActivity.url).into(itemView.circleImageView)
             itemView.name.text=userActivity.name
             itemView.txt_tittle.text = userActivity.phone
             itemView.descripccion.text = userActivity.description
+
 
         }
     }
