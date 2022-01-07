@@ -36,10 +36,12 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:autofillHints=""
+
         android:ems="10"
         android:hint="@string/e_mail"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoLetras" />
@@ -51,10 +53,12 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
-        android:autofillHints=""
+
         android:ems="10"
         android:hint="@string/password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailBarra" />
@@ -62,12 +66,13 @@
     <Button
         android:id="@+id/publishButton"
         android:layout_width="150dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/button_rounded"
         android:text="@string/registre_b"
+        android:textColor="#000000"
         app:layout_constraintEnd_toStartOf="@+id/buttonLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordBarra" />
@@ -75,12 +80,13 @@
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="150dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/button_rounded"
         android:text="@string/login"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toEndOf="@+id/publishButton"
@@ -99,7 +105,7 @@
     <ImageView
         android:id="@+id/signupFacebook"
         android:layout_width="217dp"
-        android:layout_height="42dp"
+        android:layout_height="48dp"
         android:layout_marginTop="132dp"
         android:contentDescription="@string/todo_dos"
         android:onClick="facebook"
@@ -116,7 +122,9 @@
         android:layout_marginTop="16dp"
         android:clickable="true"
         android:focusable="true"
+        android:minHeight="48dp"
         android:text="@string/forgot_password"
+        android:textColor="#263238"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />

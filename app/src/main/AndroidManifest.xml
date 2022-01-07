@@ -18,6 +18,7 @@
             android:name=".ui.PaintScreenActivity"
             android:label="@string/title_activity_paintscreem"
             android:theme="@style/NoActionBar"></activity>
+
         <activity android:name=".ui.PostActivity" />
         <activity android:name=".ui.ServicesActivity" />
         <activity
@@ -31,6 +32,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.BuildingScreenActivity"
+            android:theme="@style/NoActionBar"></activity>
     </application>
 
 </manifest>

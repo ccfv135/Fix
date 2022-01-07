@@ -6,20 +6,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chrisfajardo.fix.R
-import com.chrisfajardo.fix.ui.adapters.PainScreenAdapter
-import com.chrisfajardo.fix.viewModel.PaintScreenViewModel
+import com.chrisfajardo.fix.ui.adapters.BuildingScreenAdapter
+import com.chrisfajardo.fix.viewModel.BuildingScreenViewModel
 import kotlinx.android.synthetic.main.activity_paintscreem.*
 
-class PaintScreenActivity : AppCompatActivity() {
+class BuildingScreenActivity : AppCompatActivity() {
 
-    private lateinit var  adapter: PainScreenAdapter
-    private val viewModel by lazy { ViewModelProviders.of(this).get(PaintScreenViewModel::class.java)}
+    private lateinit var  adapter: BuildingScreenAdapter
+    private val viewModel by lazy { ViewModelProviders.of(this).get(BuildingScreenViewModel::class.java)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_paintscreem)
+        setContentView(R.layout.activity_buildscreem)
 
-        adapter= PainScreenAdapter(this)
+        adapter= BuildingScreenAdapter(this)
 
         recyclerView.layoutManager = LinearLayoutManager (this)
         recyclerView.adapter = adapter
@@ -31,7 +31,4 @@ class PaintScreenActivity : AppCompatActivity() {
         viewModel.fetchUserData().observe(this, Observer {
             adapter.setListData(it)
             adapter.notifyDataSetChanged()
-        })
-    }
-
-}
+        })}}

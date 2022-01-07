@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_auth.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_buildscreem.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_home.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_paintscreem.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_post.xml" value="0.22" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_services.xml" value="0.20364583333333333" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_splashscreem.xml" value="0.286231884057971" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/buildscreem.xml" value="1.569078947368421" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/item_row.xml" value="0.36302083333333335" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

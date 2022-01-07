@@ -18,6 +18,12 @@ class ServicesActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        buildingButtom.setOnClickListener {
+            val intent= Intent(this,
+                BuildingScreenActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

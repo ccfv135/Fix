@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix.ui
+package com.chrisfajardo.fix.ui.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,13 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisfajardo.fix.R
+import com.chrisfajardo.fix.ui.UserBuildScreenActivity
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {
+class BuildingScreenAdapter (private val context: Context): RecyclerView.Adapter<BuildingScreenAdapter.MainViewHolder>() {
 
-    private var dataList = mutableListOf<UserPaintScreenActivity>()
+    private var dataList = mutableListOf<UserBuildScreenActivity>()
 
-    fun setListData(data:MutableList<UserPaintScreenActivity>){
+    fun setListData(data: MutableList<UserBuildScreenActivity>){
         dataList =data
     }
 
@@ -35,9 +36,9 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
         holder.bindView(user)
     }
 
-    inner class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+    inner class MainViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
 
-        fun bindView(userActivity: UserPaintScreenActivity){
+        fun bindView(userActivity: UserBuildScreenActivity){
             Glide.with(context).load(userActivity.url).into(itemView.circleImageView)
             itemView.name.text=userActivity.name
             itemView.txt_tittle.text = userActivity.phone
@@ -45,6 +46,4 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
 
 
         }
-    }
-
-}
+    }}

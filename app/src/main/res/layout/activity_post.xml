@@ -46,15 +46,14 @@
     <EditText
         android:id="@+id/phonRegistre"
         android:layout_width="285dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="112dp"
         android:ems="10"
         android:hint="@string/phoneRegistre"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonUploadImage"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonUploadImage" />
 
     <EditText
         android:id="@+id/nameRegistre"
@@ -67,24 +66,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonUploadImage"
-        android:autofillHints="" />
+      />
 
     <Spinner
         android:id="@+id/spinnerServices"
         android:layout_width="276dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phonRegistre" />
 
+
     <EditText
         android:id="@+id/descRegistre"
         android:layout_width="285dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
-        android:autofillHints=""
+
         android:ems="10"
         android:gravity="start|top"
         android:hint="@string/descriptionRegistre"

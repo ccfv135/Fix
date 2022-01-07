@@ -61,7 +61,7 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     private var itemList = arrayOf(
         "Choose the Service", "painting",
-        "Building", "LockSmith", "Cleaning",
+        "building", "LockSmith", "Cleaning",
         "Care", "Carpentry", "Mechanic", "Plumbing"
     )
 
