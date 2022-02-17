@@ -2,7 +2,7 @@ package com.chrisfajardo.fix.data.repo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.chrisfajardo.fix.ui.UserBuildScreenActivity
+import com.chrisfajardo.fix.ui.users.UserBuildScreenActivity
 import com.google.firebase.firestore.FirebaseFirestore
 
 class BuildRepo {

@@ -38,8 +38,6 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private val PERMISSION_PICK_IMAGE = 1001
 
 
-
-
     private val viewModel by lazy {
         ViewModelProviders.of(this).get(FirestoreViewModel::class.java)
     }
@@ -92,8 +90,6 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             uploadImagefun()
 
 
-
-
         }
 
 
@@ -108,9 +104,9 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     private fun uploadImagefun() {
-        if (filePatch !=null){
+        if (filePatch != null) {
             dialog.show()
-            val reference= storageReference.child("images/"+ UUID.randomUUID().toString())
+            val reference = storageReference.child("images/" + UUID.randomUUID().toString())
 
             reference.putFile(filePatch!!).addOnSuccessListener { taskSnapshot ->
                 reference.downloadUrl.addOnSuccessListener {
@@ -127,7 +123,7 @@ class PostActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                 Toast.makeText(this@PostActivity, "Uploaded", Toast.LENGTH_SHORT)
                     .show()
 
-            }.addOnFailureListener{e ->
+            }.addOnFailureListener { e ->
                 dialog.dismiss()
                 Toast.makeText(this@PostActivity, "Failed", Toast.LENGTH_SHORT)
                     .show()

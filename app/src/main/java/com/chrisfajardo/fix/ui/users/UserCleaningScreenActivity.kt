@@ -1,6 +1,6 @@
-package com.chrisfajardo.fix.ui
+package com.chrisfajardo.fix.ui.users
 
-data class UserPaintScreenActivity(
+data class UserCleaningScreenActivity(
     val name: String = "DEFAULT URL",
     val phone: String = "DEFAULT PHONE",
     val description: String = "DEFAULT DESC",

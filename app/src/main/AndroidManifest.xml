@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -25,7 +26,8 @@
             android:name=".ui.SplashscreemActivity"
             android:theme="@style/splashThemme" />
         <activity android:name=".ui.HomeActivity" />
-        <activity android:name=".ui.AuthActivity">
+        <activity android:name=".ui.AuthActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,6 +36,12 @@
         </activity>
         <activity
             android:name=".ui.BuildingScreenActivity"
+            android:theme="@style/NoActionBar"></activity>
+        <activity
+            android:name=".ui.LocksmithScreenActivity"
+            android:theme="@style/NoActionBar"></activity>
+        <activity
+            android:name=".ui.CleaningScreenActivity"
             android:theme="@style/NoActionBar"></activity>
     </application>
 

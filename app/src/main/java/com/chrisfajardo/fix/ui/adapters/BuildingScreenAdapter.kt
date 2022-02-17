@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisfajardo.fix.R
-import com.chrisfajardo.fix.ui.UserBuildScreenActivity
+import com.chrisfajardo.fix.ui.listeners.Listeners
+import com.chrisfajardo.fix.ui.users.UserBuildScreenActivity
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class BuildingScreenAdapter (private val context: Context): RecyclerView.Adapter<BuildingScreenAdapter.MainViewHolder>() {
+class BuildingScreenAdapter (private val context: Context,private val listener:Listeners): RecyclerView.Adapter<BuildingScreenAdapter.MainViewHolder>() {
 
     private var dataList = mutableListOf<UserBuildScreenActivity>()
 
@@ -34,6 +35,10 @@ class BuildingScreenAdapter (private val context: Context): RecyclerView.Adapter
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val user = dataList[position]
         holder.bindView(user)
+        holder.itemView.llamaruno.setOnClickListener {
+            val phone = user.phone
+            listener.callPhoneApp(phone)
+        }
     }
 
     inner class MainViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
@@ -43,6 +48,7 @@ class BuildingScreenAdapter (private val context: Context): RecyclerView.Adapter
             itemView.name.text=userActivity.name
             itemView.txt_tittle.text = userActivity.phone
             itemView.descripccion.text = userActivity.description
+
 
 
         }

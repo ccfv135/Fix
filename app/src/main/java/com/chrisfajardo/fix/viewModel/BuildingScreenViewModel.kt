@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.chrisfajardo.fix.data.repo.BuildRepo
-import com.chrisfajardo.fix.ui.UserBuildScreenActivity
+import com.chrisfajardo.fix.ui.users.UserBuildScreenActivity
 
 class BuildingScreenViewModel : ViewModel() {
 

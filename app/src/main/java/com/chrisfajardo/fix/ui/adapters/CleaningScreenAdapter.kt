@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisfajardo.fix.R
-import com.chrisfajardo.fix.ui.users.UserPaintScreenActivity
+import com.chrisfajardo.fix.ui.users.UserCleaningScreenActivity
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {
+class CleaningScreenAdapter(private val context: Context): RecyclerView.Adapter<CleaningScreenAdapter.MainViewHolder>() {
 
-    private var dataList = mutableListOf<UserPaintScreenActivity>()
+    private var dataList = mutableListOf<UserCleaningScreenActivity>()
 
-    fun setListData(data:MutableList<UserPaintScreenActivity>){
+    fun setListData(data:MutableList<UserCleaningScreenActivity>){
         dataList =data
     }
 
@@ -38,7 +38,7 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
 
     inner class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
 
-        fun bindView(userActivity: UserPaintScreenActivity){
+        fun bindView(userActivity: UserCleaningScreenActivity){
             Glide.with(context).load(userActivity.url).into(itemView.circleImageView)
             itemView.name.text=userActivity.name
             itemView.txt_tittle.text = userActivity.phone

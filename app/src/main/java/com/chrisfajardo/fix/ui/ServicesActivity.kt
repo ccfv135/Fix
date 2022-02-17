@@ -15,12 +15,23 @@ class ServicesActivity : AppCompatActivity() {
         paintingButtom.setOnClickListener {
             val intent= Intent(this,
                 PaintScreenActivity::class.java)
+            intent.putExtra("data","value")
             startActivity(intent)
         }
 
         buildingButtom.setOnClickListener {
             val intent= Intent(this,
                 BuildingScreenActivity::class.java)
+            startActivity(intent)
+        }
+        locksmithButtom.setOnClickListener {
+            val intent= Intent(this,
+                LocksmithScreenActivity::class.java)
+            startActivity(intent)
+        }
+        cleaningButtom.setOnClickListener {
+            val intent= Intent(this,
+                CleaningScreenActivity::class.java)
             startActivity(intent)
         }
 

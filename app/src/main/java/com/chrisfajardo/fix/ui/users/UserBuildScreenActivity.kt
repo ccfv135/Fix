@@ -1,4 +1,4 @@
-package com.chrisfajardo.fix.ui
+package com.chrisfajardo.fix.ui.users
 
 data class UserBuildScreenActivity(
     val name: String = "DEFAULT URL",
