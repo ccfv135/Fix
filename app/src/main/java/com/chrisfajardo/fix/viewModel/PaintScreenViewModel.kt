@@ -12,11 +12,23 @@ class PaintScreenViewModel:ViewModel() {
     private val repo = PaintRepo()
     fun fetchUserData():LiveData<MutableList<UserPaintScreenActivity>>{
         val  mutableData = MutableLiveData<MutableList<UserPaintScreenActivity>>()
-        repo.getUserData().observeForever {userList->
+        repo.getUserData(name).observeForever { userList->
             mutableData.value= userList
         }
         return mutableData
 
 
+    }
+
+    companion object{
+
+        var name= ""
+
+        fun addName(nameInfo:String){
+
+            this.name= nameInfo
+
+
+        }
     }
 }

@@ -7,9 +7,9 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class PaintRepo {
 
-    fun getUserData(): LiveData<MutableList<UserPaintScreenActivity>> {
+    fun getUserData( name:String): LiveData<MutableList<UserPaintScreenActivity>> {
         val mutableData = MutableLiveData<MutableList<UserPaintScreenActivity>>()
-        FirebaseFirestore.getInstance().collection("painting")
+        FirebaseFirestore.getInstance().collection(name.lowercase())
             .get().addOnSuccessListener { result ->
                 val listData = mutableListOf<UserPaintScreenActivity>()
                 result.forEach{

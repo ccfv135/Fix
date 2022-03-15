@@ -19,6 +19,10 @@ class PaintScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paintscreem)
 
+        val name= intent.getStringExtra("data")
+
+        PaintScreenViewModel.addName(name!!)
+
         adapter= PainScreenAdapter(this)
 
         recyclerView.layoutManager = LinearLayoutManager (this)

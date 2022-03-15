@@ -43,6 +43,10 @@
         <activity
             android:name=".ui.CleaningScreenActivity"
             android:theme="@style/NoActionBar"></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
