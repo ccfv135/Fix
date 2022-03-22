@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fix</string>
+    <string name="hello_android">Hello Android</string>
+    <string name="e_mail">E-mail</string>
+    <string name="register">Register</string>
+    <string name="login">LogIn</string>
+    <string name="password">Password</string>
+    <string name="registre_b">Registre</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="call">Call</string>
+</resources>

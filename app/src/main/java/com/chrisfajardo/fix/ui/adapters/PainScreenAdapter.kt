@@ -7,10 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisfajardo.fix.R
+import com.chrisfajardo.fix.ui.listeners.Listeners
 import com.chrisfajardo.fix.ui.users.UserPaintScreenActivity
 import kotlinx.android.synthetic.main.item_row.view.*
 
-class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {
+class PainScreenAdapter(private val context: Context,private val listener: Listeners): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {
 
     private var dataList = mutableListOf<UserPaintScreenActivity>()
 
@@ -34,6 +35,14 @@ class PainScreenAdapter(private val context: Context): RecyclerView.Adapter<Pain
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val user = dataList[position]
         holder.bindView(user)
+        holder.itemView.llamaruno.setOnClickListener {
+            val phone = user.phone
+            listener.callPhoneApp(phone)
+        }
+        holder.itemView.buttomWS.setOnClickListener {
+            val phone = user.phone
+            listener.whatsappButoom(phone)
+        }
     }
 
     inner class MainViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){

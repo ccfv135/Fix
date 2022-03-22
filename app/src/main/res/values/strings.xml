@@ -48,5 +48,7 @@
     <string name="open_camera">open camera</string>
     <string name="v_1_2_1">V.1.2.1</string>
     <string name="image1">image1</string>
+    <string name="message">message</string>
+    <string name="call">llamar</string>
 
 </resources>

@@ -9,6 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 
+
+
+
 open class BaseActivity : AppCompatActivity() {
     fun baseCallPhoneApp(phone: String) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) ==
@@ -28,4 +31,12 @@ open class BaseActivity : AppCompatActivity() {
             )
         }
     }
-}
+    fun whatsappButoom1 (phone: String){
+        val url = "https://api.whatsapp.com/send?phone=+34$phone"
+        val i = Intent(Intent.ACTION_VIEW)
+        i.data = Uri.parse(url)
+        startActivity(i)
+        }
+    }
+
+

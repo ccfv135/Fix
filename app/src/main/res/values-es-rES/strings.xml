@@ -36,4 +36,8 @@
     <string name="llamar">LLAMAR</string>
     <string name="profilepic">fotodeperfil</string>
     <string name="especialista">Especialista</string>
+    <string name="descripci_n">Descripcion</string>
+    <string name="message">Mensaje</string>
+    <string name="call">Llamar</string>
+    <string name="open_camera">Abrir Cámara</string>
 </resources>

@@ -53,11 +53,19 @@
             android:text="@string/descripci_n" />
 
         <Button
+            android:id="@+id/buttomWS"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:backgroundTint="#609A1D"
+            android:text="@string/message"
+            android:textColor="#FFFFFF" />
+
+        <Button
             android:id="@+id/llamaruno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#609A1D"
-            android:text="@string/llamar"
+            android:text="@string/call"
             android:textColor="#FFFFFF" />
 
     </LinearLayout>

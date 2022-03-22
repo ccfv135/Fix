@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/drawable/home_icon.xml" value="0.333" />
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_auth.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_buildscreem.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/activity_cleaning.xml" value="0.35280797101449274" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/buildscreem.xml" value="1.569078947368421" />
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/item_row.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/layout/item_services.xml" value="0.36302083333333335" />
+        <entry key="..\:/Users/Christian Fajardo/Documents/Fix/app/src/main/res/menu/menu.xml" value="0.36302083333333335" />
       </map>
     </option>
   </component>
