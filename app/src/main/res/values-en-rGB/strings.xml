@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Fix</string>
+    <string name="app_name">RepairMe</string>
     <string name="hello_android">Hello Android</string>
     <string name="e_mail">E-mail</string>
     <string name="register">Register</string>

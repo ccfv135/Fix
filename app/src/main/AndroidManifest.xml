@@ -34,15 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.BuildingScreenActivity"
-            android:theme="@style/NoActionBar"></activity>
-        <activity
-            android:name=".ui.LocksmithScreenActivity"
-            android:theme="@style/NoActionBar"></activity>
-        <activity
-            android:name=".ui.CleaningScreenActivity"
-            android:theme="@style/NoActionBar"></activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

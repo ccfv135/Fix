@@ -39,27 +39,34 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/emailText"
+        app:layout_constraintVertical_bias="0.863"
         app:srcCompat="@drawable/logoutuno" />
 
     <ImageView
         android:id="@+id/servicesButton"
         android:layout_width="246dp"
         android:layout_height="115dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintBottom_toTopOf="@+id/buildingText6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/servicios" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="166dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="138dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fixlet" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo2" />
 
     <TextView
         android:id="@+id/buildingText6"
@@ -70,32 +77,54 @@
         android:text="@string/contract_serviceText"
         android:textColor="#F8F9FB"
         android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/buildingText8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
 
     <TextView
         android:id="@+id/buildingText8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="516dp"
         android:fontFamily="@font/zippy"
         android:text="@string/publish_serviceText"
         android:textColor="#F8F9FB"
         android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799" />
 
     <ImageView
         android:id="@+id/publishButtomone"
         android:layout_width="107dp"
         android:layout_height="148dp"
         android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/buildingText8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/servicesButton"
+        app:layout_constraintVertical_bias="0.142"
         app:srcCompat="@drawable/publicarperfil" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/zippy"
+        android:selectAllOnFocus="false"
+        android:shadowColor="#0B0A0A"
+        android:text="RepairMe"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/servicesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
