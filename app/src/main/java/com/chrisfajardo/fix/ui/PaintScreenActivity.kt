@@ -15,6 +15,7 @@ class PaintScreenActivity : AppCompatActivity() {
     private lateinit var  adapter: PainScreenAdapter
     private val viewModel by lazy { ViewModelProviders.of(this).get(PaintScreenViewModel::class.java)}
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_paintscreem)
@@ -31,11 +32,14 @@ class PaintScreenActivity : AppCompatActivity() {
 
     }
 
+
     private fun observeData(){
         viewModel.fetchUserData().observe(this, Observer {
             adapter.setListData(it)
             adapter.notifyDataSetChanged()
         })
+
     }
 
-}
+
+    }

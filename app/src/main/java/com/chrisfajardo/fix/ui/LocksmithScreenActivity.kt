@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.chrisfajardo.fix.R
 import com.chrisfajardo.fix.ui.adapters.LocksmithScreenAdapter
-import com.chrisfajardo.fix.viewModel.LocksmithScreenViewModel
 import kotlinx.android.synthetic.main.activity_locksmithscreen.*
 
 

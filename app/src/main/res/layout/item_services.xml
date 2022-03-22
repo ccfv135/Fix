@@ -21,18 +21,19 @@
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imageServices"
             android:layout_width="150dp"
-            android:layout_height="165dp"
+            android:layout_height="134dp"
             app:civ_border_width="2dp"
             tools:background="@color/colorPrimary" />
 
 
         <TextView
             android:id="@+id/TittleService"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/caveat"
-            android:textSize="20sp"
+            android:gravity="center"
+            android:textSize="27sp"
             android:textStyle="bold"
             tools:text="Name" />
     </LinearLayout>

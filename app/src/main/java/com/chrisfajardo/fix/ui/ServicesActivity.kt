@@ -3,6 +3,7 @@ package com.chrisfajardo.fix.ui
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.chrisfajardo.fix.R
@@ -22,9 +23,11 @@ class ServicesActivity : AppCompatActivity() {
 
     fun initRecyclerView() {
         val recyclerview = findViewById<RecyclerView>(R.id.servicesRecyclerview)
+        recyclerview.layoutManager = GridLayoutManager(applicationContext, 2)
         recyclerview.layoutManager = LinearLayoutManager(this)
         val servicesAdapter = ServicesAdapter(ServicesProvider.serviceList)
         recyclerview.adapter = servicesAdapter
+        recyclerview.layoutManager = GridLayoutManager(applicationContext, 2)
 
         servicesAdapter.onArticleClicked {
 

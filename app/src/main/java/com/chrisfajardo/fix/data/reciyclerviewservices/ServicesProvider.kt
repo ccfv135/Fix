@@ -5,7 +5,7 @@ class ServicesProvider {
         val serviceList = listOf<Services> (
             Services (
                 "Painting",
-                "https://i.ibb.co/yNX0nZv/pintura1.png"
+                "https://i.ibb.co/0BV7BYx/pintura.png"
             ),
             Services (
                 "Building",
@@ -41,7 +41,7 @@ class ServicesProvider {
             ),
             Services (
                 "Car Crane",
-                "https://i.ibb.co/xF5gqGk/mecanica2.png"
+                "https://i.ibb.co/xzpPhs2/mecanica.png"
             )
         )
     }

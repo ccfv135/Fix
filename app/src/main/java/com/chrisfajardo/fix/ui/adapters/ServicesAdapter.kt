@@ -35,4 +35,7 @@ class ServicesAdapter(private val servicesList:List<Services>) : RecyclerView.Ad
     override fun getItemCount(): Int = servicesList.size
 
 
+
+
+
 }

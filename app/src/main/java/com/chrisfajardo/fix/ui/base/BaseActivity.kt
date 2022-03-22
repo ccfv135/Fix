@@ -14,7 +14,7 @@ open class BaseActivity : AppCompatActivity() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) ==
             PackageManager.PERMISSION_GRANTED
         ) {
-            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phone))
+            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$phone"))
             startActivity(intent)
         } else {
             Toast.makeText(
