@@ -1,6 +1,7 @@
 package com.chrisfajardo.fix.ui
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,8 @@ import kotlinx.android.synthetic.main.activity_auth.*
 
 class AuthActivity : AppCompatActivity() {
 
+
+
     companion object{
         private const val RC_SIGN_IN=423
     }
@@ -25,21 +28,47 @@ class AuthActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
+
+        goto()
         setup()
+        session()
         googleLogin()
 
 
 
     }
+
     private fun goto(){
         if (authUser.currentUser!=null){
             startActivity(Intent(this, HomeActivity::class.java ))
             finish()
-        }else{
-            startActivity(Intent(this, AuthActivity::class.java ))
-            finish()
         }
+
+
     }
+    override fun onStart() {
+        super.onStart()
+        authLayout.visibility= View.VISIBLE
+    }
+
+
+    private fun session(){
+
+        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
+        val email=prefs.getString( "email", null)
+        val provider= prefs.getString("provider",null)
+
+        if(email!= null && provider != null){
+            authLayout.visibility= View.INVISIBLE
+            showHome(email,ProviderTipe.valueOf(provider))
+        }
+
+
+    }
+
+
+    // Setup
+
 
     private fun setup(){
         title= "Autenticacion"
@@ -58,7 +87,7 @@ class AuthActivity : AppCompatActivity() {
 
                     }
 
-                    }
+                }
             }
 
         }
@@ -82,7 +111,27 @@ class AuthActivity : AppCompatActivity() {
 
         }
 
+
     }
+    fun googleLogin() {
+
+        val providers = arrayListOf(
+            AuthUI.IdpConfig.GoogleBuilder().build())
+
+
+        buttonGoogle.setOnClickListener {
+            startActivityForResult(
+                AuthUI.getInstance()
+                    .createSignInIntentBuilder()
+                    .setAvailableProviders(providers)
+                    .setIsSmartLockEnabled(false)
+                    .build(),
+                RC_SIGN_IN
+            )
+
+        }
+    }
+
 
     private fun showAlert(title:String,message: String) {
         val builder = AlertDialog.Builder(this)
@@ -102,24 +151,7 @@ class AuthActivity : AppCompatActivity() {
 
     fun facebook(view: View) {}
 
-    fun googleLogin() {
 
-        val providers = arrayListOf(
-            AuthUI.IdpConfig.GoogleBuilder().build())
-
-
-        buttonGoogle.setOnClickListener {
-            startActivityForResult(
-                AuthUI.getInstance()
-                    .createSignInIntentBuilder()
-                    .setAvailableProviders(providers)
-                    .setIsSmartLockEnabled(false)
-                    .build(),
-                RC_SIGN_IN
-            )
-
-        }
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)

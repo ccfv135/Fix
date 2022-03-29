@@ -35,8 +35,7 @@
             android:layout_marginStart="8dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            tools:text="Phone"
-            />
+            tools:text="Phone" />
 
 
         <TextView
