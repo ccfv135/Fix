@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chrisfajardo.fix">
+    package="com.chrisfajardo.fixjob">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -16,17 +16,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity
-            android:name=".ui.PaintScreenActivity"
+            android:name="com.chrisfajardo.fixjob.ui.PaintScreenActivity"
             android:label="@string/title_activity_paintscreem"
             android:theme="@style/NoActionBar"></activity>
 
-        <activity android:name=".ui.PostActivity" />
-        <activity android:name=".ui.ServicesActivity" />
+        <activity android:name="com.chrisfajardo.fixjob.ui.PostActivity" />
+        <activity android:name="com.chrisfajardo.fixjob.ui.ServicesActivity" />
         <activity
-            android:name=".ui.SplashscreemActivity"
+            android:name="com.chrisfajardo.fixjob.ui.SplashscreemActivity"
             android:theme="@style/splashThemme" />
-        <activity android:name=".ui.HomeActivity" />
-        <activity android:name=".ui.AuthActivity"
+        <activity android:name="com.chrisfajardo.fixjob.ui.HomeActivity" />
+        <activity android:name="com.chrisfajardo.fixjob.ui.AuthActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

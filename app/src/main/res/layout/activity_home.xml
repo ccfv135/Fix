@@ -117,7 +117,7 @@
         android:fontFamily="@font/zippy"
         android:selectAllOnFocus="false"
         android:shadowColor="#0B0A0A"
-        android:text="RepairMe"
+        android:text="FixJob"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         app:layout_constraintBottom_toTopOf="@+id/servicesButton"
