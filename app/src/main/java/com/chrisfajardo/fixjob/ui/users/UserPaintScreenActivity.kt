@@ -1,4 +1,4 @@
-package com.chrisfajardo.fixjob.ui.users
+package com.chrisfajardo.fixjobjob.ui.users
 
 data class UserPaintScreenActivity(
     val name: String = "DEFAULT URL",

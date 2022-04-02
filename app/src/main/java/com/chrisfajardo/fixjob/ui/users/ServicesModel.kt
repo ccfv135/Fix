@@ -1,4 +1,4 @@
-package com.chrisfajardo.fixjob.ui.users
+package com.chrisfajardo.fixjobjob.ui.users
 
 import android.media.Image
 

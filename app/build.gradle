@@ -14,7 +14,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.chrisfajardo.fix"
+        applicationId "com.chrisfajardo.fixjob"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1

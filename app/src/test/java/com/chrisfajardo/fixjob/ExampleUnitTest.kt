@@ -1,4 +1,4 @@
-package com.chrisfajardo.fixjob
+package com.chrisfajardo.fixjobjob
 
 import org.junit.Test
 

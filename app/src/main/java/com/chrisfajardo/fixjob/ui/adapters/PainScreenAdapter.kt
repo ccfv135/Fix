@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.chrisfajardo.fixjob.R
 import com.chrisfajardo.fixjob.ui.listeners.Listeners
-import com.chrisfajardo.fixjob.ui.users.UserPaintScreenActivity
+import com.chrisfajardo.fixjobjob.ui.users.UserPaintScreenActivity
 import kotlinx.android.synthetic.main.item_row.view.*
 
 class PainScreenAdapter(private val context: Context,private val listener: Listeners): RecyclerView.Adapter<PainScreenAdapter.MainViewHolder>() {

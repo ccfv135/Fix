@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:drawingCacheQuality="auto"
-    tools:context=".ui.ServicesActivity">
+    tools:context="com.chrisfajardo.fixjob.ui.ServicesActivity">
 
     <TextView
         android:id="@+id/servicesText"

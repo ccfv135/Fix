@@ -2,7 +2,7 @@ package com.chrisfajardo.fixjob.data.repo
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.chrisfajardo.fixjob.ui.users.UserPaintScreenActivity
+import com.chrisfajardo.fixjobjob.ui.users.UserPaintScreenActivity
 import com.google.firebase.firestore.FirebaseFirestore
 
 class PaintRepo {

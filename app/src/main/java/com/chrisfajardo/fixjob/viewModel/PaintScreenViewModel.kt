@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.chrisfajardo.fixjob.data.repo.PaintRepo
-import com.chrisfajardo.fixjob.ui.users.UserPaintScreenActivity
+import com.chrisfajardo.fixjobjob.ui.users.UserPaintScreenActivity
 
 class PaintScreenViewModel:ViewModel() {
 
